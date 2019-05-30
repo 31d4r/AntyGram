@@ -1,0 +1,6 @@
+framework module Pods_AntyGram {
+  umbrella header "Pods-AntyGram-umbrella.h"
+
+  export *
+  module * { export * }
+}

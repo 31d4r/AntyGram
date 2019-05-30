@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xiM-Qw-lS1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="bgj-jE-jJR">
+            <objects>
+                <viewController id="Pw3-IR-zYm" customClass="DashboardViewController" customModule="AntyGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zdf-Rn-gzW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="AWJ-sJ-OzW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ear-pA-QQS">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" style="plain" id="ilM-kH-KAU">
+                            <connections>
+                                <action selector="signOutBtnPressed:" destination="Pw3-IR-zYm" id="shs-9F-iCz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gdU-yd-xdN">
+                            <color key="tintColor" red="0.92591941356658936" green="0.48325920104980469" blue="0.19479164481163025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="dgI-ku-QLn" kind="show" id="gLr-15-qPb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="signOutBtn" destination="ilM-kH-KAU" id="IuE-Os-Egh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr4-rd-hGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LuQ-Q3-bem">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xiM-Qw-lS1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AR4-mO-dHT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pw3-IR-zYm" kind="relationship" relationship="rootViewController" id="Ju8-FV-Lsg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSL-M3-Dka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="100"/>
+        </scene>
+        <!--New Post View Controller-->
+        <scene sceneID="Bwc-Qs-5gW">
+            <objects>
+                <viewController id="gaa-fF-h76" customClass="NewPostViewController" customModule="AntyGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Act-Pr-4hb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DQy-j7-bHB">
+                                <rect key="frame" x="12" y="100" width="382" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's on your mind?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycq-Im-yjq" userLabel="Place Holder Label">
+                                <rect key="frame" x="16" y="108" width="337" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="34"/>
+                                <color key="textColor" red="0.92591941356658936" green="0.48325920104980469" blue="0.19479164481163025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ycq-Im-yjq" firstAttribute="top" secondItem="tQL-ax-Ns1" secondAttribute="top" constant="20" id="5hO-Sh-vgg"/>
+                            <constraint firstItem="Ycq-Im-yjq" firstAttribute="leading" secondItem="tQL-ax-Ns1" secondAttribute="leading" constant="16" id="Hrm-dC-BUi"/>
+                            <constraint firstItem="DQy-j7-bHB" firstAttribute="bottom" secondItem="tQL-ax-Ns1" secondAttribute="bottom" id="ifz-b7-shY"/>
+                            <constraint firstItem="DQy-j7-bHB" firstAttribute="top" secondItem="tQL-ax-Ns1" secondAttribute="top" constant="12" id="mh3-sB-wbZ"/>
+                            <constraint firstItem="DQy-j7-bHB" firstAttribute="trailing" secondItem="Act-Pr-4hb" secondAttribute="trailingMargin" id="ooo-lt-4fr"/>
+                            <constraint firstItem="DQy-j7-bHB" firstAttribute="leading" secondItem="tQL-ax-Ns1" secondAttribute="leading" constant="12" id="s2e-R3-DW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tQL-ax-Ns1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j7R-2E-xkg">
+                        <barButtonItem key="leftBarButtonItem" image="common-1" id="26N-DQ-347">
+                            <color key="tintColor" red="0.92591941356658936" green="0.48325920104980469" blue="0.19479164481163025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="handleCancelButton:" destination="gaa-fF-h76" id="jAH-oL-pMR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KIU-7b-A62">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="isp-Ut-8Lx">
+                                <rect key="frame" x="302" y="3.5" width="92" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92591941356658936" green="0.48325920104980469" blue="0.19479164481163025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePostButton:" destination="gaa-fF-h76" eventType="touchUpInside" id="jz8-th-Hfg"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="26N-DQ-347" id="0gl-Sy-x6x"/>
+                        <outlet property="doneButton" destination="isp-Ut-8Lx" id="aTc-fq-tC0"/>
+                        <outlet property="placeHolderLabel" destination="Ycq-Im-yjq" id="FEF-4e-7Z5"/>
+                        <outlet property="textView" destination="DQy-j7-bHB" id="t9j-tt-tK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwU-Lh-kFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2863.768115942029" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pfs-XM-MUA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dgI-ku-QLn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yFs-lg-t2d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gaa-fF-h76" kind="relationship" relationship="rootViewController" id="6vZ-pB-lwv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okQ-8m-h5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="common-1" width="24" height="24"/>
+    </resources>
+</document>
