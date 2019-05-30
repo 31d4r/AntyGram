@@ -1,7 +1,7 @@
 # AntyGram
 
 
-<p>Hello readers! Hola a todos! Depends of the language are you are from. This is small demonstration of my new app called AntyGram. With this app I am going to show you my skills (currently) in the iOS development field.Working with HTTPS requests, making realtime post app and etc. Plase be patient and don't take things so serius, all of us are starting from the beginning.</p>
+<p>Hello readers! Hola a todos! Depends of the language area you are coming from. This is a small demonstration of an app called AntyGram (I got this app for testing practical skills). Also with this app I am going to show you my skills (currently) in the iOS development field.Working with HTTPS requests, making realtime post app and etc. Plase be patient and don't take things so serius, all of us are starting from the beginning.</p>
 <p>Uhh.. for the backend I was using Google Firebase.</p>
 <h4>1. Log in screen</h4>
 
