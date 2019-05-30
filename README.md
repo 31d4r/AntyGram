@@ -14,7 +14,7 @@
 <br>
 <p>These screens down below shows you how it looks like.</p>
 <br>
-<img src="https://i.imgur.com/4lYOd2j.png" width="320" height="640">
+<img src="https://i.imgur.com/4lYOd2j.png" width="320" height="640"> <img src="https://i.imgur.com/NZETq7T.png" width="320" height="640">
 <br>
 <img src="https://i.imgur.com/NZETq7T.png" width="320" height="640">
 
