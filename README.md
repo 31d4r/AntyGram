@@ -39,7 +39,7 @@
 <p>It looks as normal feed as Instagram, Facebook and Twitter has. More less...but it looks nice.</p>
 <img src="https://i.imgur.com/TVAhYrD.png" width="320" height="640">
 <br>
-<p>As all social media network has something special, I have the same one. Nothing more than normal feed. Lol this was so stupid. Don't worry images are hardcoded. YOu think I am going to pay more space to put a profile image? Only if I have the salary but as a student, sorry no. There are some features as:</p>
+<p>As all social media network has something special, I have the same one. Nothing more than normal feed. Lol this was so stupid. Don't worry images are hardcoded. There are some features as:</p>
 <p>1. Of course you are able to wirte a post (it would be stupid if I wrote: post a post? Oh english grammar).</p>
 <p>2. Time is working, since the 0 seconds ago back to 1970. So it means, it works totally fine.</p>
 <p>3. You are able to scroll the posts until you get bored.</p>
