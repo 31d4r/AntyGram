@@ -49,4 +49,4 @@
 <br>
 <img src="https://i.imgur.com/LLSHLEI.png" width="320" height="640">
 <br>
-<p>At the end I know that an app is now something wow but for my skills now, it is really nice. Thanks for reading this post. Next time I will be smarter :) </p>
+<p>At the end I know that an app is not something "WOW" but for my skills now, it is really nice. Thanks for reading this post. Next time I will be smarter :) </p>
